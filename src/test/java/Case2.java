@@ -7,7 +7,7 @@ public class Case2 extends ChromeRunner {
     public void case_2() {
         RegistrationSteps steps = new RegistrationSteps();
         steps
-                .signIn()
+                .CreateAccount()
                 .join()
                 .email("marikakankia")
                 .firstName("marika")
@@ -25,6 +25,11 @@ public class Case2 extends ChromeRunner {
                 .LastNameSendkKeys()
                 .password("marik")
                 .LastNameError()
-                .DisabledButton();
+                .DisabledButton()
+                .birthDay()
+                .PasswordError()
+                .birthMonth()
+                .EmptyBirthYear();
+//                .BirthDayError();
     }
 }

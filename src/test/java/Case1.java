@@ -10,7 +10,7 @@ public class Case1 extends ChromeRunner {
     public void case_1() {
         RegistrationSteps steps = new RegistrationSteps();
         steps
-                .signIn()
+                .CreateAccount()
                 .join()
                 .email(emailAddress)
                 .firstName(firstName)

@@ -17,6 +17,7 @@ public class RegistrationPage {
             birthDay = $(By.id("BirthDay")).$(byAttribute("value", "24")),
             birthMonth = $(By.id("BirthMonth")).$(byAttribute("value", "11")),
             birthYear = $(By.id("BirthYear")).$(byAttribute("value", "1999")),
+            emptybirthYear=$(By.id("BirthYear")).$(byAttribute("value", "0")),
             male = $(".tickbox-container", 0),
             checkBox = $(byText("Select All")),
             deletecheckBox = $(By.id("clear-all-checkbox-button")),
@@ -31,6 +32,7 @@ public class RegistrationPage {
             emailError=$(By.id("Email-error")),
             firstNameError=$(By.id("FirstName-error")),
             lastNameError=$(By.id("LastName-error")),
-            passwordError=$(By.id("Password-error"));
+            passwordError=$(By.id("Password-error")),
+            birthdayError=$(By.id("BirthYear-error"));
 
 }
