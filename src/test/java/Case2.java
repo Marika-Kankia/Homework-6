@@ -1,9 +1,14 @@
 import StepObject.RegistrationSteps;
 import Utils.ChromeRunner;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.Test;
 
 public class Case2 extends ChromeRunner {
-    @Test
+    @Test(retryAnalyzer = com.Facebook.Utils.Retry.class)
+    @Severity(SeverityLevel.MINOR)
+    @Description("Register a user")
     public void case_2() {
         RegistrationSteps steps = new RegistrationSteps();
         steps

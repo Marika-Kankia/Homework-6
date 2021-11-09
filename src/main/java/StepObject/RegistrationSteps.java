@@ -23,19 +23,19 @@ public class RegistrationSteps extends RegistrationPage {
         email.shouldNotBe(Condition.empty);
         return this;
     }
-    @Step("Fill Firstname input")
+    @Step("Fill Firstname input,value:{0}")
     public RegistrationSteps firstName(String FirstName){
         firstName.setValue(FirstName);
         firstName.shouldNotBe(Condition.empty);
         return this;
     }
-    @Step("Fill Lastname input")
+    @Step("Fill Lastname input,value:{0}")
     public RegistrationSteps lastName(String LastName){
         lastName.setValue(LastName);
         lastName.shouldNotBe(Condition.empty);
         return this;
     }
-    @Step("Fill Password input")
+    @Step("Fill Password input,value:{0}")
     public RegistrationSteps password(String Password){
         password.setValue(Password);
         password.shouldNotBe(Condition.empty);

@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeTest;
 
 
 public class ChromeRunner {
-    @BeforeTest
+    @BeforeTest(description="configure browser before tests")
     public  void setup(){
         WebDriverManager.chromedriver().setup();
         Configuration.startMaximized = true;
